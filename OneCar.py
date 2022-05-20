@@ -11,9 +11,9 @@ def reco():
 
     files = filedialog.askopenfilenames(initialdir='License Plates/', title='Selectionnez La Voiture')
     if files:
-        voiture = cv.imread(str(files[0]),0)
+        voiture = cv.imread(str(files[0]))
 
-        plaques = [cv.imread(file) for file in glob.glob("C:/Users/Lina/Desktop/Sam/Progs/ProjetCV/DataBase/*.png")]
+        plaques = [cv.imread(file) for file in glob.glob("DataBase/*.png")]
         sift = cv.SIFT_create()
         found = 0
         for plaque in plaques:
@@ -28,13 +28,16 @@ def reco():
                 if m.distance < 0.3 * n.distance:
                     good.append([m])
             imgf = cv.drawMatchesKnn(voiture, kp2, plaque, kp1, good, None, flags=2)
+            #cv.imshow('test', imgf)
+            #cv.waitKey(0)
             if good != []:
                 found = 1
                 tkinter.messagebox.showinfo("Response", "This car belong to our parking lot")
-                #cv.imshow('image Final', imgf)
-                #cv.waitKey(1000)
+                cv.imshow('image Final', voiture)
+                cv.waitKey(0)
+                return
                 
         if found == 0:
             tkinter.messagebox.showinfo("Response", "Not Found, This car does NOT belong to our parking lot")
         cv.destroyAllWindows()
-    root.quit()
+    root.destroy()
