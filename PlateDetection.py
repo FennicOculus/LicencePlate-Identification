@@ -2,6 +2,7 @@
 import cv2 as cv
 import glob
 
+''' Dataset Kaggle https://www.kaggle.com/datasets/andrewmvd/car-plate-detection'''
 
 sift = cv.SIFT_create()
 
