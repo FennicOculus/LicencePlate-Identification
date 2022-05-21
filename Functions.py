@@ -19,3 +19,4 @@ def NameGeneration(directory):
         if hex_number == fName:
             return NameGeneration()
     return hex_number
+

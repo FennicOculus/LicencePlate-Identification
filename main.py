@@ -3,6 +3,7 @@ from PIL import ImageTk, Image
 from OneCar import reco
 from PlateDetection import Seg
 from PlateExtraction import addCar
+from CameraDetection import vidRec
 
 win = tk.Tk()
 win.title('Parking Plate Identification')
@@ -28,7 +29,7 @@ button2.pack(side='right', padx=50, pady=0)
 button3 = tk.Button(win, text='Ajout Automatique Matricule', width=25, command=Seg)
 button3.pack(side='top', padx=0, pady=150)
 
-button3 = tk.Button(win, text='Ouvrir Caméra', width=25)
+button3 = tk.Button(win, text='Ouvrir Caméra', width=25, command=vidRec)
 button3.pack(side='bottom', padx=0, pady=100)
 
 
