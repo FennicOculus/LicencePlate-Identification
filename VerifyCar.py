@@ -11,8 +11,8 @@ class Ui_VerifyCar(object):
         self.ui.setupUi(self.MainWindow)
         self.MainWindow.show()
     def camUse(self):
-        vidRec()
         self.Popup()
+        vidRec()
     def imgUse(self):
         reco()
         
