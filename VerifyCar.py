@@ -67,6 +67,7 @@ class Ui_VerifyCar(object):
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
         self.statusbar.setObjectName("statusbar")
+        self.statusbar.hide()
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)

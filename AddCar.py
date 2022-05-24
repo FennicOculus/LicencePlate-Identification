@@ -60,6 +60,7 @@ class Ui_CarAddition(object):
         CarAddition.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(CarAddition)
         self.statusbar.setObjectName("statusbar")
+        self.statusbar.hide()
         CarAddition.setStatusBar(self.statusbar)
 
         self.retranslateUi(CarAddition)
