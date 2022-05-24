@@ -1,0 +1,3 @@
+Dataset Used: https://www.kaggle.com/datasets/andrewmvd/car-plate-detection
+automatic plate detection https://www.section.io/engineering-education/license-plate-detection-and-recognition-using-opencv-and-pytesseract
+
