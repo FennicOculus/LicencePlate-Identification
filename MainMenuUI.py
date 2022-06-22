@@ -1,6 +1,6 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
-from AddCar import Ui_CarAddition
-from VerifyCar import Ui_VerifyCar
+from AddCarUI import Ui_CarAddition
+from VerifyCarUI import Ui_VerifyCar
 
 
 class Ui_MainWindow(object):

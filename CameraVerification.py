@@ -11,10 +11,9 @@ def reco(voiture):
     plaques = [cv.imread(file) for file in glob.glob("DataBase/*.png")]
     sift = cv.SIFT_create()
     found = 0
+    img2, kp2, des2 = Functions.SiftDetect(voiture, sift)
     for plaque in plaques:
         img1, kp1, des1 = Functions.SiftDetect(plaque, sift)
-
-        img2, kp2, des2 = Functions.SiftDetect(voiture, sift)
 
         bf = cv.BFMatcher(cv.NORM_L2, crossCheck=False)
         Matches = bf.knnMatch(des2, des1, k=2)

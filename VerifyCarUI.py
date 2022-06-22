@@ -1,5 +1,5 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
-from Warning import Ui_Dialog
+from WarningUI import Ui_Dialog
 from CameraDetection import vidRec
 from OneCar import reco
 
