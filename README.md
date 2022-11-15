@@ -1,5 +1,5 @@
 # NumberPlate-Identification
-An software that uses SIFT to match licence plates and identify if a car belogs to a parking lot or not
+A software that uses SIFT to match licence plates and identify if a car belogs to a parking lot or not
 
 # Used libraries
 - PyQt5
